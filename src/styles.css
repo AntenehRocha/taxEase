@@ -7,14 +7,7 @@
 }
 
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: #111827;
   background-color: #f9fafb;
 }
