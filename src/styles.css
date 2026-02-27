@@ -514,4 +514,36 @@ ul {
   .testimonial-card p {
     overflow: hidden;
   }
+
+  .pricing-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .offices-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    text-align: left;
+  }
 }
