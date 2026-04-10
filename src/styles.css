@@ -271,6 +271,21 @@ ul {
   border: 1px solid #e5e7eb;
   padding: 16px 18px 18px;
   font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.testimonial-card details {
+  width: 100%;
+}
+
+.testimonial-card summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.testimonial-card summary::-webkit-details-marker {
+  display: none;
 }
 
 .testimonial-name {
@@ -278,14 +293,35 @@ ul {
   margin-bottom: 2px;
 }
 
-.testimonial-role {
-  font-size: 0.8rem;
-  color: #6b7280;
-  margin-bottom: 10px;
+.testimonial-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 12px;
 }
 
-.testimonial-card p:last-child {
-  color: #4b5563;
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonial-text {
+  flex: 1;
+}
+
+.testimonial-text p {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.testimonial-text p:last-child {
+  margin-bottom: 0;
+  color: #6b7280;
+  font-style: italic;
 }
 
 .pricing {
@@ -613,14 +649,10 @@ ul {
   color: #ffffff;
 }
 
-.dark-mode-page .testimonial-role {
-  color: #9ca3af;
+.dark-mode-page .testimonial-text p {
+  color: #d1d5db;
 }
 
-.dark-mode-page .brands-title {
+.dark-mode-page .testimonial-text p:last-child {
   color: #9ca3af;
-}
-
-.dark-mode-page .pricing-card-featured {
-  border-color: #ffffff;
 }

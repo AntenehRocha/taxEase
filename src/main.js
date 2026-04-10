@@ -1,21 +1,30 @@
 $(document).ready(function () {
-  $(".testimonial-card").click(function () {
-    const card = $(this);
-
-    $.getJSON("https://randomuser.me/api/", function (data) {
-      let usuario = data.results[0];
-      card.find(".user-info").remove();
-      card.append(`
-        <div class="user-info">
-          <p><strong>Name:</strong> ${usuario.name.first} ${usuario.name.last}</p>
-          <p><strong>Email:</strong> ${usuario.email}</p>
-          <img src="${usuario.picture.large}" alt="User Picture" style="width: 80px; border-radius: 50%; margin-top: 10px;">
-        </div>
-            `);
-    });
-  });
+  loadTestimonials();
 
   $("#dark-mode").click(function () {
     $("body").toggleClass("dark-mode-page");
   });
 });
+
+function loadTestimonials() {
+  $.getJSON("https://randomuser.me/api/?results=6", function (data) {
+    const usuarios = data.results;
+
+    $(".testimonial-card").each(function (index) {
+      $(this).html(`
+        <details>
+          <summary>
+            <p class="testimonial-name">${usuarios[index].name.first} ${usuarios[index].name.last}</p>
+          </summary>
+          <div class="testimonial-content">
+            <img class="profile-pic" src="${usuarios[index].picture.medium}" alt="${usuarios[index].name.first} ${usuarios[index].name.last}">
+            <div class="testimonial-text">
+              <p>${usuarios[index].name.first} ${usuarios[index].name.last}</p>
+              <p>${usuarios[index].email}</p>
+            </div>
+          </div>
+        </details>
+      `);
+    });
+  });
+}
