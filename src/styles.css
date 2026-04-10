@@ -9,7 +9,6 @@
 body {
   font-family: "Merriweather", sans-serif;
   color: #111827;
-  background-color: #f9fafb;
 }
 
 img {
@@ -65,7 +64,6 @@ ul {
 }
 
 .hero {
-  background-color: #f9fafb;
   padding: 64px 0 56px;
 }
 
@@ -153,7 +151,6 @@ ul {
 }
 
 .feature-card {
-  background-color: #ffffff;
   border-radius: 18px;
   border: 1px solid #e5e7eb;
   overflow: hidden;
@@ -256,7 +253,6 @@ ul {
 
 .testimonials {
   padding: 56px 0 64px;
-  background-color: #f9fafb;
 }
 
 .testimonials h2 {
@@ -271,7 +267,6 @@ ul {
 }
 
 .testimonial-card {
-  background-color: #ffffff;
   border-radius: 18px;
   border: 1px solid #e5e7eb;
   padding: 16px 18px 18px;
@@ -295,7 +290,6 @@ ul {
 
 .pricing {
   padding: 56px 0 64px;
-  background-color: #ffffff;
 }
 
 .pricing-grid {
@@ -357,7 +351,6 @@ ul {
 
 .offices {
   padding: 56px 0 72px;
-  background-color: #f9fafb;
 }
 
 .offices-inner {
@@ -394,7 +387,6 @@ ul {
 .site-footer {
   border-top: 1px solid #e5e7eb;
   padding: 32px 0 36px;
-  background-color: #ffffff;
 }
 
 .footer-inner {
@@ -546,4 +538,89 @@ ul {
     gap: 12px;
     text-align: left;
   }
+}
+
+#dark-mode:hover {
+  text-decoration: underline black solid 2px;
+  cursor: pointer;
+}
+
+.dark-mode-page {
+  background-color: #111827;
+  color: white;
+}
+
+.dark-mode-page .site-header {
+  background-color: #1f2937;
+  border-bottom-color: #374151;
+}
+
+.dark-mode-page .main-nav a {
+  color: #d1d5db;
+}
+
+.dark-mode-page .main-nav a:hover {
+  color: #ffffff;
+}
+
+.dark-mode-page .feature-card,
+.dark-mode-page .testimonial-card,
+.dark-mode-page .pricing-card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark-mode-page .feature-card h3,
+.dark-mode-page .testimonial-card .testimonial-name {
+  color: #ffffff;
+}
+
+.dark-mode-page .feature-card p,
+.dark-mode-page .testimonial-card p,
+.dark-mode-page .split-text p,
+.dark-mode-page .about-text p,
+.dark-mode-page .offices-text p,
+.dark-mode-page .pricing-subtitle {
+  color: #9ca3af;
+}
+
+.dark-mode-page .section-alt {
+  background-color: #1f2937;
+}
+
+.dark-mode-page .btn-secondary,
+.dark-mode-page .btn-outline {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #ffffff;
+}
+
+.dark-mode-page .btn-secondary:hover,
+.dark-mode-page .btn-outline:hover {
+  background-color: #4b5563;
+}
+
+.dark-mode-page .site-footer {
+  background-color: #1f2937;
+  border-top-color: #374151;
+}
+
+.dark-mode-page .footer-column a {
+  color: #9ca3af;
+}
+
+.dark-mode-page .footer-column a:hover {
+  color: #ffffff;
+}
+
+.dark-mode-page .testimonial-role {
+  color: #9ca3af;
+}
+
+.dark-mode-page .brands-title {
+  color: #9ca3af;
+}
+
+.dark-mode-page .pricing-card-featured {
+  border-color: #ffffff;
 }
