@@ -70,11 +70,57 @@ ul {
 .hero-inner {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .hero-content {
   max-width: 720px;
   text-align: center;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  right: -350px;
+  transform: translateY(-50%);
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-container form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+}
+
+.login-container form button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #111827;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container form button:hover {
+  background-color: #000000;
 }
 
 .hero h1 {
@@ -655,4 +701,28 @@ ul {
 
 .dark-mode-page .testimonial-text p:last-child {
   color: #9ca3af;
+}
+
+.dark-mode-page .login-container {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark-mode-page .login-container h2 {
+  color: #ffffff;
+}
+
+.dark-mode-page .login-container form input {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #ffffff;
+}
+
+.dark-mode-page .login-container form button {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.dark-mode-page .login-container form button:hover {
+  background-color: #4b5563;
 }
