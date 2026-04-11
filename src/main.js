@@ -8,10 +8,12 @@ $(document).ready(function () {
 
 function loadTestimonials() {
   $.getJSON("https://randomuser.me/api/?results=6", function (data) {
+    // este es el enlace a la API de usuarios aleatorios
     const usuarios = data.results;
 
     $(".testimonial-card").each(function (index) {
-      $(this).html(`
+      $(this)
+        .html(` // aqui se añade el html que ya tiene en el archivo .css los estilos para cada clase, así cada vez que se le de click se añadira el HTML
         <details>
           <summary>
             <p class="testimonial-name">${usuarios[index].name.first} ${usuarios[index].name.last}</p>
@@ -29,6 +31,7 @@ function loadTestimonials() {
   });
 
   $(".btn-secondary").click(function () {
+    // esta es una funcionalidad aparte que viene siendo lo mismo, pero esta vez se añade un formulario de inicio de sesión, y se muestra al hacer click en el botón "Iniciar Sesión"
     $(".login-container").html(`
       <h2>Iniciar Sesión</h2>
       <form>
@@ -40,6 +43,6 @@ function loadTestimonials() {
       </form>
     `);
 
-    $(".login-container").show();
+    $(".login-container").show(); // esto muestra el formulario de inicio de sesión al hacer click en el botón "Iniciar Sesión"
   });
 }
