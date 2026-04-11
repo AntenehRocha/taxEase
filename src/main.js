@@ -12,8 +12,8 @@ function loadTestimonials() {
     const usuarios = data.results;
 
     $(".testimonial-card").each(function (index) {
-      $(this)
-        .html(` // aqui se añade el html que ya tiene en el archivo .css los estilos para cada clase, así cada vez que se le de click se añadira el HTML
+      // aqui se añade el html que ya tiene en el archivo .css los estilos para cada clase, así cada vez que se le de click se añadira el HTML
+      $(this).html(`
         <details>
           <summary>
             <p class="testimonial-name">${usuarios[index].name.first} ${usuarios[index].name.last}</p>
