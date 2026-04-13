@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png" />
+    <title>TaxEase - Control total de tus finanzas</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">TaxEase</div>
+            <nav class="main-nav">
+                <a href="#soluciones">Soluciones</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a id="dark-mode">Dark Mode</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- now i create the main where is located the most important information of the layout -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>
+                        Toma el control total de tus finanzas. Sin errores, sin estrés
+                    </h1>
+                    <p class="hero-subtitle">
+                        Únete a más de 5.000 autónomos que ya automatizan su contabilidad.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#planes" class="btn btn-primary">Prueba 14 días sin compromiso</a>
+                        <a href="#" class="btn btn-secondary">Iniciar Sesión</a>
+                    </div>
+                </div>
+                <div class="login-container"></div>
+            </div>
+        </section>
+
+        <!-- in the features i add the same content of figma -->
+        <section id="soluciones" class="features">
+            <div class="container features-grid">
+                <article class="feature-card">
+                    <div class="feature-image">
+                        <img src="./img/Image-1.png" alt="Gestoría en el bolsillo" />
+                    </div>
+                    <h3>Tu gestoría en el bolsillo</h3>
+                    <p>
+                        Gestiona cualquier factura con la cámara de tu móvil y nuestro
+                        sistema inteligente. Descubre en segundos cómo impacta en tus
+                        impuestos.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-image">
+                        <img src="./img/Image-2.png" alt="Facturas mientras duermes" />
+                    </div>
+                    <h3>Factura mientras duermes</h3>
+                    <p>
+                        Configura en minutos tus clientes y tarifas. El sistema genera y
+                        envía las facturas de forma automática para que nunca se te pase
+                        cobrar.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-image">
+                        <img src="./img/Image-3.png" alt="Saldo real, decisiones inteligentes" />
+                    </div>
+                    <h3>Saldo real, decisiones inteligentes</h3>
+                    <p>
+                        Conecta tus cuentas bancarias para ver tu flujo de caja en tiempo
+                        real sin salir de la plataforma.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-split">
+            <div class="container split-inner">
+                <div class="split-text">
+                    <h2>Una empresa competente</h2>
+                    <p>
+                        Valorada como el premio número 1 en software contable para
+                        autónomos en 2024.
+                    </p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+                <div class="split-image">
+                    <img src="./img/Image-4.png" alt="Premios de la empresa" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section-split section-alt">
+            <div class="container split-inner">
+                <div class="split-image">
+                    <img src="./img/Image-5.png" alt="Stand de TaxEase en CES" />
+                </div>
+                <div class="split-text">
+                    <h2>Tenemos puesto</h2>
+                    <p>
+                        Disponemos de plaza para asistir a la feria tecnológica CES 2026.
+                        Ven a conocer de primera mano la próxima versión de nuestra
+                        plataforma.
+                    </p>
+                    <a href="#" class="btn btn-primary">Conocer detalles</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="about">
+            <div class="container about-inner">
+                <div class="about-text">
+                    <h2>Una empresa liderada por Andrés del Castillo</h2>
+                    <p>
+                        Nuestro CEO desde 2015, licenciado en economía y con más de 25
+                        años de experiencia ayudando a autónomos y pequeñas empresas a
+                        simplificar su fiscalidad.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
+                </div>
+                <div class="about-image">
+                    <img src="./img/Image-6.png" alt="Andrés del Castillo, CEO de TaxEase" />
+                </div>
+            </div>
+
+            <div class="container brands">
+                <p class="brands-title">
+                    Empresas que disfrutan de nuestros servicios
+                </p>
+                <div class="brands-row">
+                    <span><img src="./img/java.png" height="50px" /></span>
+                    <span><img src="./img/microsoft.png" height="50px" /></span>
+                    <span><img src="./img/huawei.png" height="50px" /></span>
+                    <span><img src="./img/nvidia.png" height="50px" /></span>
+                    <span><img src="./img/samsung.png" height="50px" /></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- in the testimonials i add 2 new tags, called summary and details, they are used to create collapsible containers -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Testimonios</h2>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card"></article>
+
+                    <article class="testimonial-card"></article>
+
+                    <article class="testimonial-card"></article>
+
+                    <article class="testimonial-card"></article>
+
+                    <article class="testimonial-card"></article>
+
+                    <article class="testimonial-card"></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="planes" class="pricing">
+            <div class="container">
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <h3>Plan Starter</h3>
+                        <p class="pricing-subtitle">Para empezar sin complicaciones</p>
+                        <p class="pricing-price">9€ <span>/ mes</span></p>
+                        <ul>
+                            <li>Hasta 10 facturas al mes</li>
+                            <li>Hasta 3 facturas de ingresos</li>
+                            <li>Generación de facturas con marca de agua</li>
+                            <li>Calendario de impuestos básico</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline full-width">Empezar gratis</a>
+                    </article>
+
+                    <article class="pricing-card pricing-card-featured">
+                        <p class="pricing-badge">Plan Business</p>
+                        <p class="pricing-subtitle">
+                            Para equipos y negocios en crecimiento
+                        </p>
+                        <p class="pricing-price">29,99€ <span>/ mes</span></p>
+                        <ul>
+                            <li>Todo el Plan Pro</li>
+                            <li>Acceso para hasta 3 empleados o socios</li>
+                            <li>
+                                Asesoramiento contable de nuestros tributaristas (IVA, IRPF)
+                            </li>
+                            <li>
+                                Análisis de rentabilidad y gráficos de flujo de caja avanzados
+                            </li>
+                            <li>Soporte prioritario por chat</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary full-width">Contratar Business</a>
+                    </article>
+
+                    <article class="pricing-card">
+                        <h3>Plan Pro</h3>
+                        <p class="pricing-subtitle">Más vendido</p>
+                        <p class="pricing-price">15€ <span>/ mes</span></p>
+                        <ul>
+                            <li>Facturas y gastos ilimitados</li>
+                            <li>
+                                Reconocimiento ilimitado de tickets y gastos con tu móvil
+                            </li>
+                            <li>Envío de facturas recurrentes y recordatorios de impago</li>
+                            <li>
+                                Conexión en tiempo real para ver el saldo y empezar a operar
+                            </li>
+                            <li>Exportación de datos para gestoría (Excel/PDF)</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline full-width">Probar 14 días gratis</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="offices">
+            <div class="container offices-inner">
+                <div class="offices-text">
+                    <h2>Busca tu oficina más cercana</h2>
+                    <p class="offices-city">Cuenca</p>
+                    <p>92732 Figueroa de Cornezuela, 56</p>
+                    <p>Cuenca, 43 88926</p>
+                    <a href="#" class="btn btn-primary">Ver en mapas</a>
+                </div>
+                <div class="offices-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24428.808432345537!2d-2.1686244543916153!3d40.06200312138975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5d6741369751c3%3A0x6e81ab6ed08cd292!2sCuenca!5e0!3m2!1sen!2ses!4v1775897008725!5m2!1sen!2ses"
+                        width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <p class="footer-logo">TaxEase</p>
+                <p class="footer-tagline">Finanzas claras para negocios que crecen</p>
+                <div class="footer-social">
+                    <span><img src="./img/logo-instagram.jpg" height="30px" /></span>
+                    <span><img src="./img/logo-linkedin.png" height="30px" /></span>
+                    <span><img src="./img/logo-x.png" height="30px" /></span>
+                </div>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <p class="footer-title">Funciones</p>
+                    <a href="#planes">Plan Starter</a>
+                    <a href="#planes">Plan Pro</a>
+                    <a href="#planes">Plan Business</a>
+                </div>
+
+                <div class="footer-column">
+                    <p class="footer-title">Saber más</p>
+                    <a href="#sobre-nosotros">Sobre nosotros</a>
+                    <a href="#soluciones">Estudios y premios</a>
+                    <a href="#soluciones">Historias de clientes</a>
+                    <a href="#soluciones">Mejores trabajos</a>
+                </div>
+
+                <div class="footer-column">
+                    <p class="footer-title">Soporte</p>
+                    <a href="#">Contacto</a>
+                    <a href="#">Soporte técnico</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./src/main.js"></script>
+</body>
+
+</html>
