@@ -1,3 +1,6 @@
+import { Analytics } from "@vercel/analytics/next"
+const analytics = new Analytics();
+
 $(document).ready(function () {
   loadTestimonials();
 
