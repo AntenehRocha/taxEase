@@ -1,5 +1,8 @@
 import { Analytics } from "@vercel/analytics/next"
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 const analytics = new Analytics();
+injectSpeedInsights();
 
 $(document).ready(function () {
   loadTestimonials();
