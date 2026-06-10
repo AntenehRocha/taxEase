@@ -1,0 +1,25 @@
+{
+  "name": "tax-ease",
+  "version": "1.0.0",
+  "description": "TaxEase - Control total de tus finanzas",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntenehRocha/taxEase.git"
+  },
+  "keywords": ["tax", "finance", "analytics"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntenehRocha/taxEase/issues"
+  },
+  "homepage": "https://github.com/AntenehRocha/taxEase#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}

@@ -7,8 +7,9 @@
 
 # Dependencies
 node_modules/
-package-lock.json
-yarn.lock
+# Note: Lock files should be committed to ensure consistent installs
+# package-lock.json
+# yarn.lock
 
 # Build outputs
 dist/
